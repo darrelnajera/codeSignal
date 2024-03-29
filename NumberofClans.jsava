@@ -1,0 +1,16 @@
+int solution(int[] divisors, int k) {
+    Set<Integer> clans = new HashSet<>();
+    for (int i = 1; i <=k; i++) {
+        clans.add(hash(divisors, i));
+    }
+    return clans.size();
+}
+
+int hash(int[] divisors, int n) {
+    int s = 0;
+    for (int d : divisors) {
+        s *= 2;
+        s += n%d == 0 ? 1 : 0;
+    }
+    return s;
+}
