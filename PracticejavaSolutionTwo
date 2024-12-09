@@ -1,0 +1,9 @@
+class Solution {
+    public static void main(String[] args) {
+        // Creating a variable for representing the speed of light
+        final int SPEEDOFLIGHTKMS = 299792;
+
+        // Output the speed of light
+        System.out.println("The speed of light is: " + SPEEDOFLIGHTKMS);
+    }
+}
