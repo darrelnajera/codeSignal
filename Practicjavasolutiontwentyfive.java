@@ -7,8 +7,10 @@ public class Practicjavasolutiontwentyfive {
     
             // Using StringBuilder to concatenate parts of a greeting message
             StringBuilder greetingSb = new StringBuilder();
+            //Use append method to concatenate
             greetingSb.append("Hello, ").append("Java ").append("programmer!");
-            
+
+            //Use toString to convert our appended greeting to a string
             System.out.println(greetingSb.toString());
         }
     }
